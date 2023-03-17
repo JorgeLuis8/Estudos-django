@@ -19,7 +19,7 @@ from django.http import HttpResponse
 
 
 def New_View(request):
-    return HttpResponse("cuzin")
+    return HttpResponse("Site django")
 
 
 urlpatterns = [
