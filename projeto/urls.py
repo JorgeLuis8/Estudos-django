@@ -20,11 +20,12 @@ from django.http import HttpResponse
 
 def New_View(request):
     return HttpResponse("Site django")
-
+def Home_site(request):
+    return HttpResponse("Site django home")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', New_View),
-    path('home/',New_View)
+    path('home/',Home_site)
 
 ]  
